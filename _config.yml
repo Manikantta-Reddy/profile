@@ -1,33 +1,29 @@
 # -------------------------------------------------
-# Basic site settings
+# Site
 # -------------------------------------------------
 title: "Karri Manikantta Reddy"
 subtitle: "MTS Software Development Engineer"
-description: >-
-  Personal profile and portfolio of Karri Manikantta Reddy — projects, experience,
-  skills, and contact.
+description: "Portfolio, projects, and contact details."
 url: "https://manikantta-reddy.github.io"
-baseurl: ""   # keep empty for user/organization pages (USERNAME.github.io)
+baseurl: ""
 
-# Optional (nice to have): repository helps some themes build edit links, etc.
 repository: "manikantta-reddy/manikantta-reddy.github.io"
 
 # -------------------------------------------------
-# Theme: Minimal Mistakes (modern, responsive)
-# Use as a REMOTE theme for GitHub Pages
+# Theme (Modern)
+# Minimal Mistakes is GitHub Pages compatible via remote_theme
 # -------------------------------------------------
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"  # version pin recommended
-minimal_mistakes_skin: "dark"  # modern look; options include: air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: "dark"   # modern look; try: air / contrast / dark / neon / mint
 
 # -------------------------------------------------
-# Author / Profile details
+# Author profile (shows nicely in sidebar/header)
 # -------------------------------------------------
 author:
   name: "Karri Manikantta Reddy"
-  avatar: "/assets/img/profile.jpg"         # add your photo at this path (optional)
+  avatar: "/assets/img/profile.jpg"    # add this image (optional but recommended)
   bio: "Software engineer focused on building scalable systems, clean APIs, and reliable services."
   location: "Hyderabad, India"
-  email: "your.email@example.com"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
@@ -40,76 +36,27 @@ author:
       url: "mailto:your.email@example.com"
 
 # -------------------------------------------------
-# Site features (Minimal Mistakes)
+# Features
 # -------------------------------------------------
 search: true
 breadcrumbs: true
 read_time: true
 
-# Optional: show a nice masthead / hero image on landing pages you choose
-# header:
-#   overlay_color: "#000"
-#   overlay_filter: "0.35"
-#   overlay_image: "/assets/img/cover.jpg"
-
 # -------------------------------------------------
-# Collections / content (optional but good for portfolios)
-# -------------------------------------------------
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
-defaults:
-  # Default layout for pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-  # Default layout for posts (if you later add a blog)
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: true
-      related: true
-  # Default layout for portfolio items
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-
-# -------------------------------------------------
-# Plugins (important for Minimal Mistakes + SEO)
-# Minimal Mistakes requires jekyll-include-cache in plugins to avoid include_cached errors
+# Plugins
+# Minimal Mistakes requires jekyll-include-cache
 # -------------------------------------------------
 plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# -------------------------------------------------
-# Markdown / formatting
-# -------------------------------------------------
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-
-# -------------------------------------------------
-# Locale / timezone
-# -------------------------------------------------
-locale: en-IN
 timezone: Asia/Kolkata
+locale: en-IN
 
-# -------------------------------------------------
-# Exclusions
-# -------------------------------------------------
 exclude:
   - Gemfile
   - Gemfile.lock
